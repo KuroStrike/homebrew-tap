@@ -1,8 +1,8 @@
 class Winserver < Formula
   desc "Windows Server on Apple Silicon Macs, in any hypervisor"
   homepage "https://github.com/KuroStrike/winserver-mac"
-  url "https://github.com/KuroStrike/winserver-mac/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "56dc6ac9888424f4deae5ae394950058ef559f23649e1d8b228de50eaf25ecdf"
+  url "https://github.com/KuroStrike/winserver-mac/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "3294a28860c3a050ad5ee5eec4b3d075f7c1ceb161a8017b3311946b113603f0"
   license "MIT"
   head "https://github.com/KuroStrike/winserver-mac.git", branch: "main"
 
@@ -29,6 +29,6 @@ class Winserver < Formula
   end
 
   test do
-    assert_match "winserver 0.1.0", shell_output("#{bin}/winserver version")
+    assert_match "winserver 0.1.1", shell_output("#{bin}/winserver version")
   end
 end
